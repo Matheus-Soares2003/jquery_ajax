@@ -7,12 +7,15 @@
     <title>Minha Página</title>
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-    <input name="cep" id="cep">
-    <button type = "button" onclick="consultaCep()">Consultar</button><br>
-    <span id = 'cidade'></span> <span id = 'uf'></span>
-    <p id = 'bairro'></p>
-    <p id = 'logradouro'></p>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class = 'navbar-brand' href="#">Consulta CEP</a>
+        <div class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="CEP" aria-label="Search" id = 'cep'>
+            <button class="btn btn-outline-success" onclick="consultaCep()">Buscar</button>
+        </div>
+    </nav>
 </body>
 </html>
